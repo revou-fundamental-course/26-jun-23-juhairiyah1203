@@ -1,0 +1,298 @@
+body {
+    padding: 10px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:burlywood;
+    gap: 10px;
+    padding: 20px;
+}
+#header1{
+    display: flex;
+    flex-direction: row;
+}
+
+#header1 > button {
+    background-color: white;
+    padding: 5px 18px;
+    border: 1 px solid gray;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+#header1 > button:hover {
+    background-color: black;
+    color: white;
+}
+
+#header1 > button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+#header1 > button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.satu {
+    padding: 20px;
+}
+
+.dua {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.img-slideshow {
+    width: 100%;
+    height: 70%;
+}
+
+.judul {
+    text-align: center;
+}
+
+.judul > h1 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.judul > p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.kiri {
+    width: 70%;
+}
+
+.kanan {
+    width: 30%;
+    background-color: burlywood;
+}
+
+.form {
+    padding: 50px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 2px;
+    border-color: azure;
+}
+
+.input:hover {
+    border-color: darkgrey;
+    opacity: 80%;
+}
+
+.jarak {
+    margin-top: 20px;
+}
+
+.teks {
+    margin-bottom: 60px;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 2px;
+    background-color: dimgrey;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.submit1 {
+    margin-top: 20px;
+}
+
+.submit:hover {
+    background-color: black;
+}
+
+.submit:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.submit:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: my-counter;
+    padding-left: 1em;
+  }
+  
+  ol li {
+    position: relative;
+    margin-bottom: 1.5em;
+    padding-left: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  ol li::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 2em;
+  }
+  
+
+.a {
+    width: 50px;
+    height:50px;
+    border-radius: 30px;
+}
+
+.awal {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.header2 {
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 30%;
+    padding: 50px;
+}
+
+.img2 {
+    width: 40px;
+    height:40px;
+    border-radius: 40px;
+}
+
+.c {
+    font-size: 20px;
+}
+
+h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+#header3 {
+    text-align: center;
+}
+
+.p1 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.p2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+footer {
+    text-align: center;
+}
+
+.p3 {
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.p4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        align-self: center;
+    }
+
+    #header1 {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .kiri {
+        width: 100%;
+    }
+
+    .kanan {
+        width: 100%;
+    }
+
+    .row1 {
+        flex-direction: column;
+    }
+
+    .row2 {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
